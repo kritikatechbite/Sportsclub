@@ -1,0 +1,92 @@
+/* ==========================================================
+   Sportsclub – Responsive enhancements (mobile-first, min-width)
+   ========================================================== */
+
+/* ---------- ≥ 600px : large phones / small tablets ---------- */
+@media (min-width: 600px) {
+  :root { --gutter: 24px; }
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .tiles { grid-template-columns: repeat(3, 1fr); }
+  .tick-card { flex-basis: 270px; }
+  .news-form__row { flex-direction: row; }
+  .news-form__row .btn { flex: none; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .match-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+  .newsletter { padding: 40px 36px; }
+  .mini-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- ≥ 768px : tablets ---------- */
+@media (min-width: 768px) {
+  .section { padding-block: 60px; }
+  .hero__inner { padding-block: 100px 80px; }
+  .page-hero { padding-block: 70px 56px; }
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .tiles { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .fixture { grid-template-columns: 110px 1fr 200px; }
+  .fixture__info:first-child { text-align: left; }
+  .fixture__info:last-child { text-align: right; }
+  .newsletter__grid { grid-template-columns: 1.1fr 1fr; gap: 40px; }
+  .toolbar { grid-template-columns: 1fr minmax(260px, 340px); align-items: center; }
+  .score-controls { grid-template-columns: 1fr auto; align-items: center; }
+  .about-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .contact-grid { grid-template-columns: 1.2fr 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .sport-block { padding-block: 64px; }
+  .sport-block__grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .sport-block:nth-of-type(even) .sport-block__media { order: 2; }
+  .sport-facts { grid-template-columns: 1fr 1fr; }
+  .modal { padding: 32px 16px; }
+  .modal__dialog { min-height: 0; border-radius: 24px; overflow: hidden; }
+  .modal__body { padding: 36px 44px 44px; }
+  .to-top { right: 24px; bottom: 24px; }
+}
+
+/* ---------- ≥ 1024px : laptops – full desktop nav ---------- */
+@media (min-width: 1024px) {
+  :root { --header-h: 76px; }
+  .nav-toggle { display: none; }
+  .main-nav { position: static; display: block; background: none; border: 0; padding: 0; max-height: none; overflow: visible; }
+  .main-nav ul { flex-direction: row; gap: 4px; }
+  .main-nav a { padding: 10px 16px; font-size: .95rem; position: relative; }
+  .main-nav a[aria-current="page"] { background: none; }
+  .main-nav a[aria-current="page"]::after { content: ""; position: absolute; left: 16px; right: 16px; bottom: 2px; height: 3px; border-radius: 3px; background: var(--accent); }
+  .logo img { height: 40px; }
+  .site-header.is-scrolled .logo img { height: 34px; }
+  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+  .tiles { grid-template-columns: repeat(6, 1fr); }
+  .tick-card { flex-basis: 290px; }
+  .layout-sidebar { grid-template-columns: minmax(0, 1fr) 340px; gap: 40px; }
+  .sidebar-sticky { position: sticky; top: 90px; }
+  .match-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr 1.4fr; gap: 36px; }
+  .home-split { display: grid; grid-template-columns: 1.55fr 1fr; gap: 28px; }
+  .home-features { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+  .story--lg { min-height: 460px; }
+  .scores-split { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .mini-list { grid-template-columns: 1fr; }
+}
+
+/* ---------- ≥ 1440px : large desktops ---------- */
+@media (min-width: 1440px) {
+  body { font-size: 17px; }
+  .container { max-width: 1360px; }
+  .hero__inner { max-width: 860px; padding-block: 130px 100px; }
+  .section { padding-block: 76px; }
+}
+
+/* ---------- ≤ 380px : very small phones ---------- */
+@media (max-width: 380px) {
+  .logo img { height: 30px; }
+  .btn { padding: 0 18px; }
+  .hero__stats { gap: 16px; }
+  .tiles { gap: 10px; }
+  .mt__score { font-size: 1.4rem; }
+}
+
+@media (min-width: 1024px) {
+  .scores-split > div + div { margin-top: 0; }
+}

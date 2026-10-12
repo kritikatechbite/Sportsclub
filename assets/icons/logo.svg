@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" role="img" aria-label="Sportsclub">
+  <title>Sportsclub</title>
+  <g>
+    <rect x="1" y="4" width="40" height="40" rx="11" fill="#B8FF3B"/>
+    <circle cx="21" cy="24" r="12" fill="none" stroke="#0B1220" stroke-width="2.6"/>
+    <path d="M9.5 20.5c6 1 11 5 14 12" fill="none" stroke="#0B1220" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M32.5 17c-6 0-11 3-14 9" fill="none" stroke="#0B1220" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M21 12v24" stroke="#0B1220" stroke-width="2.4" stroke-linecap="round" opacity=".0"/>
+  </g>
+  <text x="52" y="32" font-family="Outfit, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">Sports<tspan fill="#B8FF3B">club</tspan></text>
+</svg>
